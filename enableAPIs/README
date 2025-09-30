@@ -1,0 +1,5 @@
+Make sure the project ID is defined in ../terraform.tfvars
+
+terraform plan --out=plan.out --var-fike=../terraform.tfvars
+terraform apply plan.out
+

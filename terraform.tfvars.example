@@ -1,0 +1,56 @@
+# Required variables
+
+project_id  = "your-project-id-goes-here"
+
+# Optional variables with their defaults
+
+# The region for the bastion host and GKE cluster
+# region = "us-central1"
+
+
+# The subnet range for the bastion host and GKE nodes
+# subnet_range = "10.100.16.0/20"
+
+# Is a bation host needed?
+# create_bastion_host = false
+
+# The bastion host machine type
+# bastion_machine_type = "e2-medium"
+
+# The bastion host image project
+# bastion_image_project = "ubuntu-os-cloud"
+
+# The bastion host image family
+# bastion_image_family = "ubuntu-2404-lts-amd64"
+
+# The zone for the bastion host
+# bastion_zone = "us-central1-a"
+
+# The GKE node image type
+# gke_image_type="UBUNTU_CONTAINERD"
+
+# The location of the GKE cluster, can be a region or a zone
+# gke_location = "us-central1-a"
+
+# The GKE node machine type
+# gke_machine_type = "n2-standard-8"
+
+# The number of GKE nodes per zone needed in the cluster's location
+# If you select a regional cluster, the number of zones will be
+# multiplied by this number to get the total number of nodes.
+# gke_node_count = 2
+
+# The amount of local storage per GKE node
+# gke_node_disk_size_gb = 40
+
+# The disk type for each GKE node
+# gke_node_disk_type = "pd-standard"
+
+# Start of GKE maintenance windows in RFC3339 zulu format
+# gke_node_maint_start = "2025-01-01T09:00:00Z"
+
+# End of GKE maintenance windows in RFC3339 zulu format
+# gke_node_maint_end = "2025-01-01T17:00:00Z"
+
+# GKE maintenance window recurrence in RFC5545 RRULE format
+# gke_node_maint_recurrence = "FREQ=DAILY"
